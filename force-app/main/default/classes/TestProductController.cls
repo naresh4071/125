@@ -3,13 +3,13 @@ public class TestProductController {
     @testSetup
     static void createProducts() {
         List<Product__c> products = new List<Product__c>();
-
+System.debug('hi');
         products.add(
             new Product__c(
                 Name = 'Sample Bike 1',
                 MSRP__c = 1000,
                 Category__c = 'Mountain',
-                Level__c = 'Beginner',
+               Level__c = 'Beginner',
                 Material__c = 'Carbon'
             )
         );
